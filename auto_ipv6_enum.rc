@@ -1,0 +1,9 @@
+setg rhosts 10.32.6.1/24 
+setg threads 16
+setg interface eth0
+use auxiliary/scanner/discovery/ipv6_multicast_ping
+run
+use auxiliary/scanner/discovery/ipv6_neighbor
+run
+use auxiliary/scanner/discovery/ipv6_neighbor_router_advertisement
+run

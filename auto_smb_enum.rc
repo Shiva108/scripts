@@ -1,0 +1,16 @@
+setg rhosts 10.38.32.108, 10.38.32.109, 10.38.32.111, 10.38.32.197, 10.6.32.106, 10.6.32.109, 10.6.32.232, 10.6.32.38, 10.6.32.54, 10.6.32.90, 10.6.32.38, 10.6.32.39, 10.6.32.54, 10.6.32.90, 10.6.32.232
+setg threads 16
+use auxiliary/scanner/smb/smb_lookupsid
+run
+use auxiliary/scanner/smb/pipe_auditor
+run
+use auxiliary/scanner/smb/pipe_dcerpc_auditor
+run
+use auxiliary/scanner/smb/smb2
+run
+use auxiliary/scanner/smb/smb_enumshares
+run
+use auxiliary/scanner/smb/smb_lookupsid
+run
+use auxiliary/scanner/smb/smb_version
+run
